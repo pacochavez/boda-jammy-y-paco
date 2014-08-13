@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:fb="http://ogp.me/ns/fb#"> 
 <head>
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<meta charset="UTF-8">
@@ -45,6 +45,15 @@
 	</script>
 </head>
 <body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));
+	</script>
 	<header>
 		<figure>
 			<img  src="img/boda-jammy-paco.png" alt="la boda de Jammy y Paco">	
@@ -128,6 +137,9 @@
 				</form>
 			</div>
 		</article>
+		<div class="cometnarios">
+			<fb:comments href="http://jammyvega.pacochavez.mx/" numposts="5" colorscheme="light"></fb:comments>
+		</div>
 	</section>	
 	<section class="contacto icon-triangulo-bottom">
 		<h2>Si tienes alguna duda contáctanos aquí</h2>
